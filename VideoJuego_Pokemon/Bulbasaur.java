@@ -27,17 +27,17 @@ public class Bulbasaur extends Pokemon implements IPlanta{
     }
 
     @Override
-    public String atacarPlacaje() {
-        return "BULBASAUR: Responde con Ataque Básico 1";
+    public void atacarPlacaje() {
+        System.out.println("BULBASAUR: Responde con Ataque Básico 1");
     }
 
     @Override
-    public String atacarAraniazo() {
-        return "BULBASAUR: Responde con Ataque Básico 2";
+    public void atacarAraniazo() {
+        System.out.println("BULBASAUR: Responde con Ataque Básico 2");
     }
 
     @Override
-    public String atacarMordisco() {
-        return "BULBASAUR: Responde con Ataque Básico 3";
+    public void atacarMordisco() {
+        System.out.println("BULBASAUR: Responde con Ataque Básico 3");
     }
 }

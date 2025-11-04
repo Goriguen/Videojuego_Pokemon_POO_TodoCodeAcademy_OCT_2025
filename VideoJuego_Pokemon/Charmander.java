@@ -22,17 +22,17 @@ public class Charmander extends Pokemon implements IFuego{
     }
 
     @Override
-    public String atacarPlacaje() {
-        return "CHARMANDER: Responde con Ataque Básico 1";
+    public void atacarPlacaje() {
+        System.out.println("CHARMANDER: Responde con Ataque Básico 1");
     }
 
     @Override
-    public String atacarAraniazo() {
-        return "CHARMANDER: Responde con Ataque Básico 2";
+    public void atacarAraniazo() {
+        System.out.println("CHARMANDER: Responde con Ataque Básico 2");
     }
 
     @Override
-    public String atacarMordisco() {
-        return "CHARMANDER: Responde con ataque Básico 3";
+    public void atacarMordisco() {
+        System.out.println("CHARMANDER: Responde con Ataque Básico 3");
     }
 }

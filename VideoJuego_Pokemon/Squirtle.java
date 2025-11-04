@@ -28,17 +28,17 @@ public class Squirtle extends Pokemon implements IAgua{
     }
 
     @Override
-    public String atacarPlacaje() {
-        return "SQUIRTLE: Responde con Ataque Básico 1";
+    public void atacarPlacaje() {
+        System.out.println("SQUIRTLE: Responde con Ataque Básico 1");
     }
 
     @Override
-    public String atacarAraniazo() {
-        return "SQUIRTLE: Responde con Ataque Básico 2";
+    public void atacarAraniazo() {
+        System.out.println("SQUIRTLE: Responde con Ataque Básico 2");
     }
 
     @Override
-    public String atacarMordisco() {
-        return "SQUIRTLE: Responde con Ataque Básico 3";
+    public void atacarMordisco() {
+        System.out.println("SQUIRTLE: Responde con Ataque Básico 3");
     }
 }

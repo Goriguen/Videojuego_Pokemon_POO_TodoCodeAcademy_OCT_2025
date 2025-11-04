@@ -14,8 +14,8 @@ public abstract class Pokemon{
         this.tipo = tipo;
     }
 
-    public abstract String atacarPlacaje();
-    public abstract String atacarAraniazo();
-    public abstract String atacarMordisco();
+    public abstract void atacarPlacaje();
+    public abstract void atacarAraniazo();
+    public abstract void atacarMordisco();
 
 }
