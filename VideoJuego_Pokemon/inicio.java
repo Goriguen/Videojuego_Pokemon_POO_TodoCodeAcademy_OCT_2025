@@ -74,7 +74,7 @@ public class inicio {
                     sc.nextLine();
                     System.out.print("Ingrese el sexo del personaje: ");
                     String sexoPersonaje = sc.nextLine();
-                    System.out.print("Ingrese el sexo del personaje: ");
+                    System.out.print("Ingrese el tipo del personaje: ");
                     String tipoPersonaje = sc.nextLine();
 
                     // Se usa 'nombreValido' en el constructor de la instancia:
@@ -127,8 +127,7 @@ public class inicio {
                     pokemonPlanta.atacarHojaAfilada();
                     pokemonPlanta.atacarLatigoCepa();
                     pokemonPlanta.atacarParalizar();
-                }else{
-                    IFuego pokemonFuego = (IFuego)p;
+                }else if (p instanceof IFuego pokemonFuego){
 
                     pokemonFuego.atacarAscuas();
                     pokemonFuego.atacarPunioFuego();
