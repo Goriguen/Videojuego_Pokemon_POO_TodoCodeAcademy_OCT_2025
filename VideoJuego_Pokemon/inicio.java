@@ -101,10 +101,39 @@ public class inicio {
 
             System.out.println("\n--- INICIANDO SIMULACIÓN DE ATAQUES ---");
 
-            Pokemon[] miListaPokemon = null;
-            for(Pokemon p : miListaPokemon){
+            for(Pokemon p : misPokemones){
+                p.atacarAraniazo();
+                p.atacarMordisco();
+                p.atacarPlacaje();
 
+                if(p instanceof IElectrico){
+                    IElectrico pokemonElectrico = (IElectrico)p;
 
+                    pokemonElectrico.atacarImpactrueno();
+                    pokemonElectrico.atacarPunioTrueno();
+                    pokemonElectrico.atacarRayo();
+                    pokemonElectrico.atacarRayoCarga();
+                }else if(p instanceof IAgua){
+                    IAgua pokemonAgua = (IAgua)p;
+
+                    pokemonAgua.atacarBurbuja();
+                    pokemonAgua.atacarHidroBomba();
+                    pokemonAgua.atacarPistolaAgua();
+                    pokemonAgua.atacarHidropulso();
+                }else if(p instanceof IPlanta){
+                    IPlanta pokemonPlanta = (IPlanta)p;
+
+                    pokemonPlanta.atacarDrenaje();
+                    pokemonPlanta.atacarHojaAfilada();
+                    pokemonPlanta.atacarLatigoCepa();
+                    pokemonPlanta.atacarParalizar();
+                }else{
+                    IFuego pokemonFuego = (IFuego)p;
+
+                    pokemonFuego.atacarAscuas();
+                    pokemonFuego.atacarPunioFuego();
+                    pokemonFuego.atacarLanzallamas();
+                }
             }
         }
 
