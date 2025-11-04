@@ -7,7 +7,7 @@ public class inicio {
 
     public static void main (String args[] ){
 
-        System.out.println("¿Bienvenido entrenador(a) POKEMON!\n¿Estás Listo Para tu Próxima Aventura?\n\n ¡EMPECEMOS!\n\n");
+        System.out.println("\n¿Bienvenido entrenador(a) POKEMON!\n\n¿Estás Listo Para tu Próxima Aventura?\n\n ¡EMPECEMOS!\n\n");
 
         boolean salir = false;
         boolean ejecutarSimulacion = false;
@@ -34,7 +34,7 @@ public class inicio {
                         nombreEsValido = false;
                         nombreRepetido = false;
 
-                        System.out.print("Ingrese el nombre del Pokémon [Pikachu, Charmander, Bulbasaur, Squirtle]: ");
+                        System.out.print("\nIngrese el nombre del Pokémon [Pikachu, Charmander, Bulbasaur, Squirtle]: \n");
                         nombreValido = sc.nextLine();
 
 
@@ -82,8 +82,8 @@ public class inicio {
                         misPokemones[x] = new Pikachu(numPokedex, peso, temporadaAparece, nombreValido, sexoPersonaje, tipoPersonaje);
                     } else if (nombreValido.equalsIgnoreCase("Charmander")) {
                         misPokemones[x] = new Charmander(numPokedex, peso, temporadaAparece, nombreValido, sexoPersonaje, tipoPersonaje);
-                    } else if (nombreValido.equalsIgnoreCase("Bulbasur")) {
-                        misPokemones[x] = new Bulbasur(numPokedex, peso, temporadaAparece, nombreValido, sexoPersonaje, tipoPersonaje);
+                    } else if (nombreValido.equalsIgnoreCase("Bulbasaur")) {
+                        misPokemones[x] = new Bulbasaur(numPokedex, peso, temporadaAparece, nombreValido, sexoPersonaje, tipoPersonaje);
                     } else if (nombreValido.equalsIgnoreCase("Squirtle")) {
                         misPokemones[x] = new Squirtle(numPokedex, peso, temporadaAparece, nombreValido, sexoPersonaje, tipoPersonaje);
                     }
@@ -99,12 +99,13 @@ public class inicio {
 
         if(ejecutarSimulacion){
 
-            System.out.println("\n--- INICIANDO SIMULACIÓN DE ATAQUES ---");
+            System.out.println("\n--- INICIANDO SIMULACIÓN DE ATAQUES ---\n");
 
             for(Pokemon p : misPokemones){
                 p.atacarAraniazo();
                 p.atacarMordisco();
                 p.atacarPlacaje();
+                System.out.println("\n");
 
                 if(p instanceof IElectrico){
                     IElectrico pokemonElectrico = (IElectrico)p;
