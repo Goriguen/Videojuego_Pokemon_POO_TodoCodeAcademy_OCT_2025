@@ -26,7 +26,7 @@ public class inicio {
                 for (int x = 0; x < misPokemones.length; x++) {
                     System.out.println("\n--- Creación del Pokémon #" + (x + 1) + " ---");
 
-                    // 1. Pedir atributos al usuario (ejemplo para el nombre)
+                    // 1) Pedir atributos al usuario (ejemplo para el nombre)
                     String nombreValido;
                     boolean nombreEsValido;
                     boolean nombreRepetido;
@@ -38,7 +38,7 @@ public class inicio {
                         nombreValido = sc.nextLine();
 
 
-                        // A. VALIDACIÓN DE NOMBRE (DEBE SER UNO DE LOS 4)
+                        // A) VALIDACIÓN DE NOMBRE (DEBE SER UNO DE LOS 4)
 
                         if (nombreValido.equalsIgnoreCase("Pikachu") ||
                                 nombreValido.equalsIgnoreCase("Charmander") ||
