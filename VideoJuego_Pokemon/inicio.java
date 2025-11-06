@@ -99,10 +99,11 @@ public class inicio {
 
         if(ejecutarSimulacion){
 
-            System.out.println("\n--- INICIANDO SIMULACIÓN DE ATAQUES ---\n");
+            System.out.println("\n\n--- INICIANDO SIMULACIÓN DE ATAQUES ---");
 
             for(Pokemon p : misPokemones){
 
+                System.out.println("\n");
                 p.atacarPlacaje();
                 p.atacarAraniazo();
                 p.atacarMordisco();
@@ -124,14 +125,12 @@ public class inicio {
                 }else if(p instanceof IPlanta){
                     IPlanta pokemonPlanta = (IPlanta)p;
 
-                    System.out.println("\n");
                     pokemonPlanta.atacarDrenaje();
                     pokemonPlanta.atacarHojaAfilada();
                     pokemonPlanta.atacarLatigoCepa();
                     pokemonPlanta.atacarParalizar();
                 }else if (p instanceof IFuego pokemonFuego){
 
-                    System.out.println("\n");
                     pokemonFuego.atacarAscuas();
                     pokemonFuego.atacarPunioFuego();
                     pokemonFuego.atacarLanzallamas();
